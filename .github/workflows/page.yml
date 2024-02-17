@@ -15,5 +15,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-# everything inside .dist folder will be deployed to Github Pages
         publish_dir: ./dist
