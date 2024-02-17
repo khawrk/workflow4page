@@ -11,6 +11,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Setup NodeJS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install Node packages
+      run: npm install
+
     - name: Deploy to GitHub Pages
       uses: peaceiris@actions-gh-pages@v3
       with:
